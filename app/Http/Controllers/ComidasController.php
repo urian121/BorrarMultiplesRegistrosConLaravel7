@@ -25,7 +25,7 @@ public function DeleteMultiple(Request $request){
         DB::table('Comidas')->where('id',$delete)->delete();
     } 
         
-    return back();
+    return back(); 
 }
 
 

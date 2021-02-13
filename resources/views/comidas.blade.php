@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <title>Como Eliminar Múltiples Registros con Checkbox usando Laravel :: WebDeveloper Urian Viera</title>	
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <style> 
         table tr th{
             background:rgba(0, 0, 0, .6);
