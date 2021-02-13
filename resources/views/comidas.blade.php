@@ -3,17 +3,40 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Comidas</title>
-	<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+	<link type="text/css" rel="shortcut icon" href="{{ asset ('img/logo-mywebsite-urian-viera.svg') }}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <title>Como Eliminar Múltiples Registros con Checkbox usando Laravel :: WebDeveloper Urian Viera</title>	<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+	   <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <style> 
+        table tr th{
+            background:rgba(0, 0, 0, .6);
+            color: azure;
+        }
+        h3{
+            color:crimson; 
+            margin-top: 100px;
+        }
+        a:hover{
+            cursor: pointer;
+            color: #333 !important;
+        }
+      </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="background-color: #563d7c !important;">
+    <span class="navbar-brand">
+        <img src="{{ asset ('img/logo-mywebsite-urian-viera.svg') }}" alt="Web Developer Urian Viera" width="120">
+        Web Developer Urian Viera
+    </span>
+</nav>
 
+<div class="container top mt-5">
 
-
-<div class="content mt-5">
-	
-
-<h1 class="text-center">Como Eliminar Multiples Registros con Laravel</h1>
+<h3 class="text-center">
+Como Eliminar Múltiples Registros con Checkbox usando Laravel
+</h3>
+<hr>
+<br>
 
 <h4 class="text-center">
 	LISTA DE COMIDAS <strong> ({{ count($comidas) }})</strong>
