@@ -5,8 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link type="text/css" rel="shortcut icon" href="{{ asset ('img/logo-mywebsite-urian-viera.svg') }}"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <title>Como Eliminar Múltiples Registros con Checkbox usando Laravel :: WebDeveloper Urian Viera</title>	<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-	   <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <title>Como Eliminar Múltiples Registros con Checkbox usando Laravel :: WebDeveloper Urian Viera</title>	
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <style> 
         table tr th{
             background:rgba(0, 0, 0, .6);
@@ -15,10 +16,6 @@
         h3{
             color:crimson; 
             margin-top: 100px;
-        }
-        a:hover{
-            cursor: pointer;
-            color: #333 !important;
         }
       </style>
 </head>
@@ -33,7 +30,7 @@
 <div class="container top mt-5">
 
 <h3 class="text-center">
-Como Eliminar Múltiples Registros con Checkbox usando Laravel
+    Como Eliminar Múltiples Registros con Checkbox usando Laravel
 </h3>
 <hr>
 <br>
@@ -48,6 +45,8 @@ Como Eliminar Múltiples Registros con Checkbox usando Laravel
 <form method="POST" action="{{ route('comidadeletemultiple') }}">
     {{ csrf_field() }}
 
+<input type="submit" class="btn btn-primary waves-effect" value="Eliminar Comidas">
+ 
  <div class="table-responsive">
     <table class="table table-striped table-hover" style="width: 85% !important">
 		<thead>
@@ -55,7 +54,6 @@ Como Eliminar Múltiples Registros con Checkbox usando Laravel
 				<th>#</th>
 				<th>Comida</th>
 				<th>Likes</th>
-				<th><input type="submit" class="btn btn-primary waves-effect" value="Eliminar"></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -68,13 +66,11 @@ Como Eliminar Múltiples Registros con Checkbox usando Laravel
 
 				<td>{{ $comida->nombre }}</td>
 				<td>{{ $comida->like }}</td>
-				<td>- - - - -</td>
 			</tr>
 			@endforeach
 		</tbody>
 	</table>
 </div>
-
 </form>
 
 </div>
